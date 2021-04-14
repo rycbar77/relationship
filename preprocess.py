@@ -4,7 +4,9 @@ import re
 
 def cut_txt():
     jieba.load_userdict('name_dict.txt')
-    jieba.load_userdict('userdict.txt')
+    jieba.load_userdict('user_place_dict.txt')
+    jieba.load_userdict('user_name_dict.txt')
+
     stop_words = [line.strip() for line in open('StopwordsCN.txt', encoding='utf-8').readlines()]  # 简体中文停用词
 
     with open('content.txt', 'r', encoding='utf-8') as f:
