@@ -50,5 +50,5 @@ def get_name(content):
 if __name__ == '__main__':
     url = "https://baike.baidu.com/item/%E4%BA%BA%E6%B0%91%E7%9A%84%E5%90%8D%E4%B9%89/17545218"
     content = get_content(url)
-    # get_intro(content)
+    get_intro(content)
     get_name(content)
